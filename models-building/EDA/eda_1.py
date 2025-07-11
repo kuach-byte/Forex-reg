@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import os
 
-# Load your data
+
 df = pd.read_csv("data/ohlcv.csv") 
 
 # Display the first few rows
