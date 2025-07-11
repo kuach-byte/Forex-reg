@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from statsmodels.graphics.tsaplots import plot_acf
 import os
 
-# Load your combined dataframe
+
 df = pd.read_csv("data/ohlcv.csv")  
 df['time'] = pd.to_datetime(df['time'])
 
