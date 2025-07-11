@@ -1,0 +1,14 @@
+== USDNOK (Volatility) ==
+Accuracy: 1.0000
+Macro-F1: 1.0000
+Best Params: {'subsample': 1.0, 'num_leaves': 31, 'n_estimators': 100, 'min_child_samples': 50, 'max_depth': 10, 'learning_rate': 0.05, 'colsample_bytree': 0.6}
+
+              precision    recall  f1-score   support
+
+           0      1.000     1.000     1.000       197
+           1      1.000     1.000     1.000       185
+           2      1.000     1.000     1.000       212
+
+    accuracy                          1.000       594
+   macro avg      1.000     1.000     1.000       594
+weighted avg      1.000     1.000     1.000       594

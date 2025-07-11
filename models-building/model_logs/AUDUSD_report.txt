@@ -1,0 +1,14 @@
+== AUDUSD ==
+Accuracy: 0.9357
+Macro-F1: 0.9380
+Best Params: {'colsample_bytree': 1.0, 'learning_rate': 0.1, 'max_depth': -1, 'min_child_samples': 20, 'n_estimators': 200, 'num_leaves': 63, 'subsample': 0.8}
+
+              precision    recall  f1-score   support
+
+        -1.0      0.952     0.945     0.949       127
+         0.0      0.929     0.914     0.922       245
+         1.0      0.933     0.954     0.944       219
+
+    accuracy                          0.936       591
+   macro avg      0.938     0.938     0.938       591
+weighted avg      0.936     0.936     0.936       591

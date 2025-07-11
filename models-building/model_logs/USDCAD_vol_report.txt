@@ -1,0 +1,14 @@
+== USDCAD (Volatility) ==
+Accuracy: 0.9949
+Macro-F1: 0.9907
+Best Params: {'subsample': 0.8, 'num_leaves': 63, 'n_estimators': 200, 'min_child_samples': 50, 'max_depth': 10, 'learning_rate': 0.05, 'colsample_bytree': 1.0}
+
+              precision    recall  f1-score   support
+
+           0      0.967     1.000     0.983        29
+           1      1.000     0.984     0.992       184
+           2      0.995     1.000     0.997       381
+
+    accuracy                          0.995       594
+   macro avg      0.987     0.995     0.991       594
+weighted avg      0.995     0.995     0.995       594

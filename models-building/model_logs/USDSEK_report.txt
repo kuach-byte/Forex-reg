@@ -1,0 +1,14 @@
+== USDSEK ==
+Accuracy: 0.9408
+Macro-F1: 0.9365
+Best Params: {'colsample_bytree': 1.0, 'learning_rate': 0.05, 'max_depth': -1, 'min_child_samples': 50, 'n_estimators': 100, 'num_leaves': 31, 'subsample': 0.8}
+
+              precision    recall  f1-score   support
+
+        -1.0      0.958     0.968     0.963       284
+         0.0      0.929     0.897     0.912       203
+         1.0      0.917     0.952     0.934       104
+
+    accuracy                          0.941       591
+   macro avg      0.934     0.939     0.936       591
+weighted avg      0.941     0.941     0.941       591

@@ -1,0 +1,14 @@
+== NZDUSD (Volatility) ==
+Accuracy: 1.0000
+Macro-F1: 1.0000
+Best Params: {'subsample': 1.0, 'num_leaves': 63, 'n_estimators': 100, 'min_child_samples': 10, 'max_depth': -1, 'learning_rate': 0.1, 'colsample_bytree': 1.0}
+
+              precision    recall  f1-score   support
+
+           0      1.000     1.000     1.000       141
+           1      1.000     1.000     1.000       172
+           2      1.000     1.000     1.000       281
+
+    accuracy                          1.000       594
+   macro avg      1.000     1.000     1.000       594
+weighted avg      1.000     1.000     1.000       594

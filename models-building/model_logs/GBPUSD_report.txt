@@ -1,0 +1,14 @@
+== GBPUSD ==
+Accuracy: 0.9560
+Macro-F1: 0.9523
+Best Params: {'colsample_bytree': 0.8, 'learning_rate': 0.1, 'max_depth': -1, 'min_child_samples': 50, 'n_estimators': 100, 'num_leaves': 31, 'subsample': 0.8}
+
+              precision    recall  f1-score   support
+
+        -1.0      0.970     0.932     0.950       103
+         0.0      0.929     0.938     0.934       195
+         1.0      0.969     0.976     0.973       293
+
+    accuracy                          0.956       591
+   macro avg      0.956     0.949     0.952       591
+weighted avg      0.956     0.956     0.956       591

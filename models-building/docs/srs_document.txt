@@ -1,0 +1,77 @@
+
+# Software Requirements Specification (SRS)
+## Forex Market Regime Prediction System
+
+---
+
+### 1. Introduction
+
+#### 1.1 Purpose
+The purpose of this document is to define the functional and non-functional requirements for a Forex market regime prediction system that determines whether a 4-hour timeframe is trending or ranging using machine learning (LightGBM/XGBoost) and technical indicators.
+
+#### 1.2 Scope
+The system fetches historical Forex data, engineers features using technical indicators, labels the data based on price behavior, and trains a model to classify the market behavior. The model can later be used for live predictions via script or REST API.
+
+#### 1.3 Intended Audience
+- Developers and data scientists building or improving the system
+- Forex analysts interested in automation
+
+---
+
+### 2. Overall Description
+
+#### 2.1 System Perspective
+The system will be modular and implemented in Python. Data will be pulled from MetaTrader5 or CSV files, processed, labeled, and passed to a supervised learning algorithm.
+
+#### 2.2 User Needs
+- Automatically detect market regimes (trend or range)
+- Generate predictions from live or historical data
+- Easily retrain the model when new data becomes available
+
+#### 2.3 Assumptions and Dependencies
+- MetaTrader5 platform is installed and configured
+- Internet connection is available for live data (if used)
+- Python environment with required libraries is set up
+
+---
+
+### 3. Functional Requirements
+
+- The system shall fetch 4-hour OHLCV data from MetaTrader5 or CSV.
+- The system shall compute 20+ technical indicators.
+- The system shall label the data using future returns and ADX threshold.
+- The system shall train a LightGBM model using engineered features.
+- The system shall evaluate model performance using F1 and ROC AUC.
+- The system shall save the trained model to disk for future inference.
+- The system shall predict trend/range on unseen data.
+
+---
+
+### 4. Non-Functional Requirements
+
+- Model training must complete within 2 minutes on CPU.
+- Predictions must take <1 second per instance.
+- The system should run on standard hardware (laptop with 8GB+ RAM).
+- API (if implemented) must respond within 500ms.
+
+---
+
+### 5. External Interface Requirements
+
+#### 5.1 Hardware
+- Standard PC or laptop with Python installed
+
+#### 5.2 Software
+- Python 3.9+
+- Required packages: pandas, numpy, MetaTrader5, ta, lightgbm, scikit-learn, flask (optional)
+
+#### 5.3 Communications
+- Optionally expose an HTTP API for remote prediction
+
+---
+
+### 6. Future Enhancements
+
+- Incorporate LSTM models for sequential learning
+- Extend to other currency pairs or timeframes
+- Real-time prediction and dashboard

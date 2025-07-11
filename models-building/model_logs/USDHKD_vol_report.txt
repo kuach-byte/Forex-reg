@@ -1,0 +1,14 @@
+== USDHKD (Volatility) ==
+Accuracy: 0.9983
+Macro-F1: 0.9982
+Best Params: {'subsample': 0.8, 'num_leaves': 127, 'n_estimators': 300, 'min_child_samples': 50, 'max_depth': 10, 'learning_rate': 0.01, 'colsample_bytree': 1.0}
+
+              precision    recall  f1-score   support
+
+           0      1.000     0.995     0.998       207
+           1      0.994     1.000     0.997       169
+           2      1.000     1.000     1.000       218
+
+    accuracy                          0.998       594
+   macro avg      0.998     0.998     0.998       594
+weighted avg      0.998     0.998     0.998       594

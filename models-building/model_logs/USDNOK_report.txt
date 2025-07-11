@@ -1,0 +1,14 @@
+== USDNOK ==
+Accuracy: 0.9425
+Macro-F1: 0.9456
+Best Params: {'colsample_bytree': 0.8, 'learning_rate': 0.05, 'max_depth': 10, 'min_child_samples': 50, 'n_estimators': 200, 'num_leaves': 63, 'subsample': 0.8}
+
+              precision    recall  f1-score   support
+
+        -1.0      0.939     0.965     0.952       285
+         0.0      0.929     0.921     0.925       227
+         1.0      1.000     0.924     0.961        79
+
+    accuracy                          0.942       591
+   macro avg      0.956     0.937     0.946       591
+weighted avg      0.943     0.942     0.942       591

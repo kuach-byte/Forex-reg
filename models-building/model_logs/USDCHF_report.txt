@@ -1,0 +1,14 @@
+== USDCHF ==
+Accuracy: 0.9357
+Macro-F1: 0.9277
+Best Params: {'colsample_bytree': 0.8, 'learning_rate': 0.05, 'max_depth': -1, 'min_child_samples': 20, 'n_estimators': 100, 'num_leaves': 31, 'subsample': 0.8}
+
+              precision    recall  f1-score   support
+
+        -1.0      0.953     0.978     0.965       270
+         0.0      0.896     0.930     0.912       213
+         1.0      0.978     0.843     0.905       108
+
+    accuracy                          0.936       591
+   macro avg      0.942     0.917     0.928       591
+weighted avg      0.937     0.936     0.935       591
