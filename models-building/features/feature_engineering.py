@@ -6,7 +6,7 @@ from sklearn.preprocessing import MinMaxScaler
 # === CONFIGURATION ===
 INPUT_FILE = "data/ohlcv.csv"
 OUTPUT_FILE = "data/semifinal_ohlcv.csv"
-MIN_ROWS = 10  # Minimum required rows per pair to compute indicators
+MIN_ROWS = 10  
 
 
 # === STEP 1: Load Data ===
