@@ -27,7 +27,7 @@ plt.show()
 
 # Step 4: Identify redundant features (correlation > 0.9) — but protect essential OHLC columns
 threshold = 0.9
-protected_features = ['open', 'high', 'low', 'close']  # These will not be dropped
+protected_features = ['open', 'high', 'low', 'close']  
 
 upper_triangle = correlation_matrix.where(np.triu(np.ones(correlation_matrix.shape), k=1).astype(bool))
 to_drop = [
