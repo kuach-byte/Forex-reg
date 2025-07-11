@@ -3,9 +3,9 @@ import pandas as pd
 from datetime import datetime
 
 # Account credentials
-LOGIN = 314575281
-PASSWORD = "Kuach_Aleu_11"
-SERVER = "XMGlobal-MT5 7"
+LOGIN = ***
+PASSWORD = "***"
+SERVER = "***"
 
 # USD-related forex pairs
 usd_pairs = [
