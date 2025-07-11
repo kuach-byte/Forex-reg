@@ -6,25 +6,14 @@ A FastAPI-based REST API to serve predictions
 Docker-ready structure for deployment
 Cleanly organized components for scalability and maintainability
 
-Project Structure
-
-Forex-reg/
-├── docked-api/
-│ └── forex-api/
-│ ├── app-main.py
-│ ├── models/ 
-│ └── requirements.txt
-├── models-building/ # Code and notebooks used to train models
-├── .gitignore
-└── README.md
 
 Getting Started
 
 1. Clone the repository
 
-```bash
 git clone https://github.com/kuach-byte/Forex-reg.git
 cd Forex-reg
+
 
 2. Set up a virtual environment
 
@@ -33,7 +22,7 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r docked-api/forex-api/requirements.txt
 
 3. Run the API
-```bash
+
 cd docked-api/forex-api
 uvicorn main:app --reload
 
